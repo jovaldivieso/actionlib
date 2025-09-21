@@ -55,7 +55,7 @@ class SimpleActionClient:
         self.simple_state = SimpleGoalState.DONE
         self.gh = None
         self.done_condition = threading.Condition()
-        self.lock = threading.Rlock()
+        self.lock = threading.RLock()
 
     ## @brief Blocks until the action server connects to this client
     ##
